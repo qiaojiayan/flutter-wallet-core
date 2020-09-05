@@ -35,7 +35,6 @@ public class FlutterWalletBBC {
         return keyInfo;
     }
 
-
     /**
      * @param call   arguments: salt,mnemonic
      * @param result {address,publicKey,privateKey}

@@ -109,6 +109,10 @@ public class FlutterWalletCorePlugin implements FlutterPlugin, MethodCallHandler
       result.success(signTx);
     } else if (Arrays.asList(FlutterWalletBBC.allFunc).contains(call.method))  {
        FlutterWalletBBC.callFunc(call,result);
+    }  else if (Arrays.asList(FlutterWalletBTC.allFunc).contains(call.method))  {
+      FlutterWalletBTC.callFunc(call,result);
+    } else if (Arrays.asList(FlutterWalletETH.allFunc).contains(call.method))  {
+      FlutterWalletETH.callFunc(call,result);
     }else{
       result.notImplemented();
     }
