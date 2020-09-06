@@ -139,6 +139,9 @@ public class FlutterWalletCorePlugin implements FlutterPlugin, MethodCallHandler
     options.add(Wallet.withPathFormat(path));
     options.add(Wallet.withPassword(password));
     options.add(Wallet.withShareAccountWithParentChain(shareAccountWithParentChain));
+    options.add(Wallet.withFlag(Wallet.FlagBBCUseStandardBip44ID));
+    options.add(Wallet.withFlag(Wallet.FlagMKFUseBBCBip44ID));
+
     Wallet_ wallet = null;
     try {
       wallet = Wallet.buildWalletFromMnemonic(mnemonic, beta, options);

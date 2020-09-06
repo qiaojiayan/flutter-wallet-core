@@ -62,7 +62,7 @@ public class FlutterWalletBTC {
             BTCAddress change = new BTCAddress(fromAddress, chainID);
 
             BTCTransaction trans = new BTCTransaction(unspent, outputAmount, change, feeRate, chainID);
-            String data = trans.encode();
+            String data = trans.encodeToSignCmd();
             result.success(data);
         } catch (Exception e) {
             result.error("PROCESS_ERROR", "Unknown error when createBTCTransaction", null);
