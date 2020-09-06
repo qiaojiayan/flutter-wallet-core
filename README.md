@@ -1,2 +1,2 @@
-# flutter-wallet-core
-flutter sdk for wallet-core
+# flutter-wallet
+flutter sdk for wallet
