@@ -1,27 +1,15 @@
-package com.dabank.flutter_wallet_core;
+package com.dabank.flutter_wallet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-
-import bbc.Bbc;
-import bbc.KeyInfo;
-import bip39.Bip39;
 import btc.BTCAddress;
 import btc.BTCAmount;
 import btc.BTCOutputAmount;
 import btc.BTCTransaction;
 import btc.BTCUnspent;
-import btc.Btc;
-import eth.BigInt;
-import eth.ETHAddress;
-import eth.ETHTransaction;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel.Result;
-import wallet.Wallet;
-import wallet.WalletOptions;
-import wallet.Wallet_;
 
 public class FlutterWalletBTC {
     static String[] allFunc = new String[]{"createBTCTransaction"};

@@ -1,4 +1,4 @@
-package com.dabank.flutter_wallet_core;
+package com.dabank.flutter_wallet;
 
 import java.util.HashMap;
 

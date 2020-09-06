@@ -1,13 +1,5 @@
-package com.dabank.flutter_wallet_core;
+package com.dabank.flutter_wallet;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import btc.BTCAddress;
-import btc.BTCAmount;
-import btc.BTCOutputAmount;
-import btc.BTCTransaction;
-import btc.BTCUnspent;
 import eth.BigInt;
 import eth.ETHAddress;
 import eth.ETHTransaction;
@@ -29,8 +21,6 @@ public class FlutterWalletETH {
 
     static private void createETHTransaction(MethodCall call, Result result) {
         try {
-
-
             double nonce = call.argument("nonce");
             int gasLimit = call.argument("gasLimit");
             String address = call.argument("address");
